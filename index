@@ -1,0 +1,75 @@
+<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Media Hub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Tabs -->
+    <div class="tabs">
+      <button class="tab-button active" data-tab="feed">Feed</button>
+      <button class="tab-button" data-tab="notifications">
+        <span class="icon">🔔</span>
+      </button>
+      <button class="tab-button" data-tab="inbox">
+        <span class="icon">✉️</span>
+      </button>
+      <button class="tab-button" data-tab="browse">
+        <span class="icon">🌐</span>
+      </button>
+    </div>
+
+    <!-- Tab Content -->
+    <div class="tab-content">
+      <!-- Feed Tab -->
+      <div id="feed" class="tab-pane active">
+        <div class="card">
+          <h2>Unified Feed</h2>
+          <p>Posts from Facebook, Instagram, Twitter, and LinkedIn.</p>
+        </div>
+      </div>
+
+      <!-- Notifications Tab -->
+      <div id="notifications" class="tab-pane">
+        <div class="card">
+          <h2>Notifications</h2>
+          <p>All social media alerts in one place.</p>
+        </div>
+      </div>
+
+      <!-- Inbox Tab -->
+      <div id="inbox" class="tab-pane">
+        <div class="card">
+          <h2>Universal Inbox</h2>
+          <p>Messages from different platforms.</p>
+        </div>
+      </div>
+
+      <!-- Browse Tab -->
+      <div id="browse" class="tab-pane">
+        <div class="card">
+          <div class="platform-buttons">
+            <button data-platform="https://www.facebook.com">Facebook</button>
+            <button data-platform="https://www.instagram.com">Instagram</button>
+            <button data-platform="https://www.twitter.com">Twitter</button>
+            <button data-platform="https://www.linkedin.com">LinkedIn</button>
+          </div>
+          <iframe id="platform-frame" src="https://www.facebook.com"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Post Scheduler -->
+    <div class="card">
+      <h2>Post Scheduler</h2>
+      <p>Create and schedule posts for multiple accounts.</p>
+      <button class="schedule-button">📅 Schedule Post</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
