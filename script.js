@@ -12,6 +12,14 @@ tabButtons.forEach((button) => {
     button.classList.add("active");
     const tabId = button.getAttribute("data-tab");
     document.getElementById(tabId).classList.add("active");
+
+    // Handle iframe visibility
+    const iframe = document.getElementById("platform-frame");
+    if (tabId === "browse") {
+      iframe.classList.remove("iframe-hidden");
+    } else {
+      iframe.classList.add("iframe-hidden");
+    }
   });
 });
 
